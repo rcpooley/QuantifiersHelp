@@ -1,0 +1,31 @@
+Universes:
+<ng-container *ngFor="let uni of getUniverses()">
+    <div class="universe">
+        <div class="universeID">{{uni.id}}</div>
+        <div *ngFor="let dvar of genKeys(uni.domains)" class="domain">
+            {{dvar}} ∈ <input type="text" [(ngModel)]="uni.domains[dvar].description"/>
+            <button (click)="deleteDomain(uni, dvar)">X</button>
+        </div>
+        <button (click)="addDomain(uni)">Add Domain</button>
+        <div *ngFor="let name of genKeys(uni.predicates)" class="predicate">
+            {{name}}(
+            <ng-container *ngFor="let v of uni.predicates[name].vars; let i = index" [attr.data-index]="i">
+                <input type="text" class="predicateVar" [(ngModel)]="uni.predicates[name].vars[i]"/>
+                <span *ngIf="i < uni.predicates[name].vars.length - 1">,</span>
+            </ng-container>
+            )
+            <button (click)="addVar(uni, name)">+</button>
+            <button (click)="deletePredicate(uni, name)">X</button>
+            <br>
+            <input type="text" [(ngModel)]="uni.predicates[name].description"/>
+            <input type="text" [(ngModel)]="uni.predicates[name].evaluate"/>
+        </div>
+        <button (click)="addPredicate(uni)">Add Predicate</button>
+        <div align="center">
+            <button (click)="saveUniverse(uni)">Save</button>
+            <button (click)="reloadUniverse(uni)">Cancel</button>
+            <button (click)="deleteUniverse(uni)">Delete</button>
+        </div>
+    </div>
+</ng-container>
+<button (click)="addUniverse()">Create Universe</button>

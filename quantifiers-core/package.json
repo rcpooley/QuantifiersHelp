@@ -1,0 +1,14 @@
+{
+  "name": "quantifiers-core",
+  "version": "1.0.6",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.2",
+    "@types/node": "^8.5.2"
+  }
+}

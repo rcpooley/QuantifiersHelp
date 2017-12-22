@@ -1,0 +1,15 @@
+.universe {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  padding: 2px;
+  width: 300px; }
+  .universe .universeID {
+    color: gold;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center; }
+  .universe .predicate .predicateVar {
+    width: 30px; }
+
+/*# sourceMappingURL=admin.component.css.map */
