@@ -1,7 +1,6 @@
 import {DataStoreServer, DataSocket} from "datasync-js";
 import {Web} from "./web";
 import {Database} from "./database";
-import {IUniverse} from "quantifiers-core/dist/interfaces";
 
 export class DataSync {
 

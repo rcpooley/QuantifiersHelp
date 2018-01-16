@@ -23,7 +23,7 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "datasync-js": "^3.1.0",
-    "quantifiers-core": "file:///C:\\Users\\Robert\\WebstormProjects\\QuantifiersHelp\\quantifiers-core",
+    "quantifiers-core": "file:..\\quantifiers-core",
     "rxjs": "^5.4.2",
     "socket.io-client": "^2.0.4",
     "zone.js": "^0.8.14"

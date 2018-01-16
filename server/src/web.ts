@@ -43,7 +43,7 @@ export class Web {
         this.app.use('/api', new MainRoute(this).router);
 
         this.app.get('*', (req, res) => {
-            res.send('Hello world2!');
+            res.send('Hello world3!');
         });
     }
 

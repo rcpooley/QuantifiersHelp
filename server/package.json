@@ -4,14 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf build",
-    "tsc": "tsc",
-    "copy": "copyfiles -u 1 src/**/*.json dist/src && copyfiles -u 1 src/**/*.html dist/src",
-    "build": "npm-run-all tsc copy",
-    "watch:build": "tsc --watch",
-    "watch:server": "nodemon \"dist/src/server.js\" --watch \"./dist\"",
-    "start": "npm-run-all clean build --parallel watch:build watch:server --print-label",
-    "go": "npm run build && node dist/src/server.js",
+    "start": "gulp",
     "test": "gulp test"
   },
   "keywords": [],
@@ -19,14 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "copyfiles": "^1.2.0",
     "datasync-js": "^3.0.0",
     "express": "^4.16.2",
     "mongodb": "^2.2.33",
-    "nodemon": "^1.13.3",
-    "npm-run-all": "^4.1.2",
-    "quantifiers-core": "file:///C:\\Users\\Robert\\WebstormProjects\\QuantifiersHelp\\quantifiers-core",
-    "rimraf": "^2.6.2",
+    "quantifiers-core": "file:..\\quantifiers-core",
     "socket.io": "^2.0.4",
     "typescript": "^2.6.2"
   },
