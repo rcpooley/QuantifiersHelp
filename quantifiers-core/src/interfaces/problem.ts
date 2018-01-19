@@ -1,5 +1,6 @@
 export interface IProblem {
     id: string;
     prompt: string;
-    solutions: {[dataSetID: number]: boolean};
+    solution: string;
+    solutions?: {[dataSetID: number]: boolean};
 }

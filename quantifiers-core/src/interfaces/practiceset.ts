@@ -1,7 +1,6 @@
-import {IUniverse} from "./universe";
 import {IProblem} from "./problem";
 
 export interface IPracticeSet {
-    universe: IUniverse;
+    universeID: string;
     problems: {[problemID: number]: IProblem};
 }
