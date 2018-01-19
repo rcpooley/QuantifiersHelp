@@ -1,4 +1,3 @@
-export * from './dataentry';
 export * from './dataset';
 export * from './domain';
 export * from './practiceset';

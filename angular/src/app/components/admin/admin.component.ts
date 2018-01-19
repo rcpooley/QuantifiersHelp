@@ -75,8 +75,7 @@ export class AdminComponent implements OnInit {
         uni.predicates[name] = {
             name: name,
             vars: [],
-            description: '',
-            evaluate: ''
+            description: ''
         };
     }
 

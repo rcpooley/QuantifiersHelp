@@ -13,11 +13,10 @@ export class EvalPredicate implements Evaluateable {
     }
 
     evaluate(universe: IUniverse, dataSet: IDataSet, variableState: IVariableState): boolean {
-        let evalStr = universe.predicates[this.predicateName].evaluate;
-        return EvalPredicate.doEval(evalStr, this.vars, dataSet, variableState);
+        return EvalPredicate.doEval(dataSet.predicateTruth, variableState);
     }
 
-    private static doEval(evalStr: string, vars: string[], dataSet: IDataSet, variableState: IVariableState): boolean {
+    private static doEval(predicateTruth: string, variableState: IVariableState): boolean {
         //TODO predicate eval
         return false;
     }

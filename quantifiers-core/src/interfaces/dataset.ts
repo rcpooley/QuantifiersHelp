@@ -1,6 +1,5 @@
-import {IDataEntry} from "./dataentry";
-
 export interface IDataSet {
     id: string;
-    entries: {[domainVar: string]: {[dataEntryID: number]: IDataEntry}};
+    entryNum: {[domainVar: string]: number};
+    predicateTruth: string;
 }

@@ -18,7 +18,6 @@ Universes:
             <button (click)="deletePredicate(uni, name)">X</button>
             <br>
             <input type="text" [(ngModel)]="uni.predicates[name].description"/>
-            <input type="text" [(ngModel)]="uni.predicates[name].evaluate"/>
         </div>
         <button (click)="addPredicate(uni)">Add Predicate</button>
         <div align="center">

@@ -27,7 +27,6 @@ export class DataSync {
     private setupServer() {
         this.dsServer = new DataStoreServer()
             .serveGlobal('store');
-        let store = this.dsServer.getStore('store');
     }
 
     public static getTopPath(path: string): string {

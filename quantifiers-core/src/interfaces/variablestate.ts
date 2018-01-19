@@ -1,4 +1,4 @@
 export interface IVariableState {
-    variables: {[domainVar: string]: {[domainNum: number]: string}};//Maps to dataEntryID
+    variables: {[domainVar: string]: {[domainNum: number]: number}};//Maps to dataEntryID
     clone: () => IVariableState;
 }
