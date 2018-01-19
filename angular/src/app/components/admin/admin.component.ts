@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MainService} from "../../services/main.service";
 import {IUniverse} from "quantifiers-core/dist/interfaces";
 import {DataStore} from "datasync-js";
+import {Util} from "../../util";
 
 @Component({
     selector: 'admin',
@@ -85,5 +86,27 @@ export class AdminComponent implements OnInit {
 
     deletePredicate(uni: IUniverse, name: string) {
         delete uni.predicates[name];
+    }
+
+    addDataSet(uni: IUniverse) {
+        let dsID = this.newDataSetID(uni);
+        uni.dataSets[dsID] = {
+            id: dsID,
+            entryNum: {},
+            predicateTruth: ''
+        };
+    }
+
+    deleteDataSet(uni: IUniverse, dsID: string) {
+        delete uni.dataSets[dsID];
+    }
+
+    private newDataSetID(uni: IUniverse): string {
+        let curIDs = Object.keys(uni.dataSets);
+        let newID;
+        do {
+            newID = Util.randomString(5);
+        } while (curIDs.includes(newID));
+        return newID;
     }
 }

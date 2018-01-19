@@ -2,8 +2,19 @@
   border: 1px solid black;
   border-radius: 5px;
   margin-bottom: 3px;
-  padding: 2px;
+  padding: 2px 5px;
   width: 300px; }
+  .universe .subsectionheader {
+    color: red;
+    font-weight: bold; }
+  .universe .subsection {
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin-bottom: 10px; }
+  .universe .controlbtns {
+    text-align: center;
+    margin-top: 5px; }
   .universe .universeID {
     color: gold;
     font-weight: bold;
@@ -11,5 +22,16 @@
     text-align: center; }
   .universe .predicate .predicateVar {
     width: 30px; }
+  .universe .dsname {
+    font-weight: bold;
+    color: blue; }
+  .universe .dataset {
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 4px;
+    margin-bottom: 4px; }
+    .universe .dataset textarea {
+      margin-top: 3px;
+      width: calc(100% - 5px); }
 
 /*# sourceMappingURL=admin.component.css.map */
