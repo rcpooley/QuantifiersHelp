@@ -1,0 +1,54 @@
+.universe {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    padding: 2px 5px;
+    width: 300px;
+
+    .subsectionheader {
+        color: red;
+        font-weight: bold;
+    }
+
+    .subsection {
+        padding: 5px 10px;
+        border: 1px solid red;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .controlbtns {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .universeID {
+        color: gold;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .predicate {
+        .predicateVar {
+            width: 30px;
+        }
+    }
+
+    .dsname {
+        font-weight: bold;
+        color: blue;
+    }
+
+    .dataset {
+        border: 1px solid blue;
+        border-radius: 3px;
+        padding: 4px;
+        margin-bottom: 4px;
+
+        textarea {
+            margin-top: 3px;
+            width: calc(100% - 5px);
+        }
+    }
+}

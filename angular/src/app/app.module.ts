@@ -7,12 +7,16 @@ import {AdminComponent} from "./components/admin/admin.component";
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {MainService} from "./services/main.service";
+import {AdminUniverseComponent} from "./components/admin-universe/admin-universe.component";
+import {AdminPracticesetComponent} from "./components/admin-practiceset/admin-practiceset.component";
 
 @NgModule({
     declarations: [
         AppComponent,
         PracticeSetsComponent,
         AdminComponent,
+        AdminUniverseComponent,
+        AdminPracticesetComponent,
         DashboardComponent
     ],
     imports: [
