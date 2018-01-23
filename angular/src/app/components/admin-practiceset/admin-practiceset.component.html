@@ -1,1 +1,9 @@
-Practice Set!
+Truth:
+<ng-container *ngIf="universe">
+    <div *ngFor="let str of parseTruth()">
+        "{{str}}"
+    </div>
+    <br><br>
+    <input [(ngModel)]="input" type="text"/>
+    <button (click)="parseInput()">Evaluate</button>
+</ng-container>
